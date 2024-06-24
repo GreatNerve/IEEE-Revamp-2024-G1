@@ -21,3 +21,8 @@ git push -u origin group-[group no]
 > [!NOTE]
 >
 > Always double-check that you are committing to the correct branch before pushing your code. This ensures that each group's work remains organized and isolated.
+
+## Deployoment
+-  Group 1: [https://ieeensut.netlify.app/](https://ieeensut.netlify.app/)
+-  Group 2: [Na](NA)
+-  Group 3: [NA](NA)

@@ -6,7 +6,7 @@ export default function Home() {
       {/* <Stats /> */}
       <section className="">
         <div className="">
-          <h2 className="text-3xl font-bold text-center mb-4 md:mb-6 mt-8">
+          <h2 className="text-2xl  md:text-5xl font-bold text-center mb-4 md:mb-6 mt-8">
             Our Achievements
           </h2>
           <ScaleCarousel list={Achivement} height="h-96" />
