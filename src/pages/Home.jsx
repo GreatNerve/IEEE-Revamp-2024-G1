@@ -1,4 +1,5 @@
 import { Banner, CTA, ScaleCarousel, Stats } from "@/components";
+import Dev from "@/components/includes/Event";
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
           <ScaleCarousel list={Achivement} height="h-96" />
         </div>
       </section>
+      <Dev />
       <CTA />
     </>
   );
