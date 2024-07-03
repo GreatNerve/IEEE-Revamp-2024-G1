@@ -21,7 +21,7 @@ export default function Banner() {
           particleColor="#FFFFFF"
         />
       </div>
-      <div className="relative z-5 mx-auto max-w-screen-xl px-4 py-4 pt-12 sm:px-6 lg:min-h-screen  lg:px-8">
+      <div className="relative z-5 mx-auto max-w-screen-xl px-4 py-4 pt-44 sm:px-6 lg:min-h-screen  lg:px-8">
         <div className="lg:flex lg:items-center">
           <div className="max-w-2xl text-left ltr:sm:text-left rtl:sm:text-right">
             <h1 className="tracking-tight	 text-3xl font-extrabold sm:text-5xl">
