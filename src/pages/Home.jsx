@@ -1,19 +1,46 @@
 import { Banner, CTA, ScaleCarousel, Stats } from "@/components";
 import Dev from "@/components/includes/Event";
+import WallOfWisdom from "@/components/includes/WallOfWidom";
+import { BentoGridDemo } from "@/components/includes/EventGrid";
+import { Department } from "@/components/includes/Department";
+import Faq from "@/components/includes/Faq";
+import MarqueeDemo from "@/components/includes/Testimonial";
+
 export default function Home() {
   return (
     <>
       <Banner />
       {/* <Stats /> */}
+      <div className="">
+        <h2 className="text-2xl  md:text-5xl font-bold text-center mb-4 md:mb-6 mt-8">
+          Our Departments
+        </h2>
+        <Department />
+      </div>
       <section className="">
-        <div className="">
+        <div className="pt-8 md:pt-12">
           <h2 className="text-2xl  md:text-5xl font-bold text-center mb-4 md:mb-6 mt-8">
             Our Achievements
           </h2>
           <ScaleCarousel list={Achivement} height="h-96" />
         </div>
       </section>
-      <Dev />
+      <div className="pt-8">
+        <h2 className="text-2xl  md:text-5xl font-bold text-center mb-4 md:mb-6 mt-8">
+          Alumni Reflectioins
+        </h2>
+        <div className="">
+          <MarqueeDemo />
+        </div>
+      </div>
+      <section className="md:px-28 px-8 pt-8 md:pt-16">
+        <WallOfWisdom />
+      </section>
+      {/* <Dev /> */}
+      <div className="pt-12 md:pt-16 px-8 md:px-28">
+        <BentoGridDemo />
+      </div>
+      <Faq />
       <CTA />
     </>
   );
