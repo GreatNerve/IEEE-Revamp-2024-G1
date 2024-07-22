@@ -13,8 +13,11 @@ export default function Home() {
       {/* <Stats /> */}
       <div className="">
         <h2 className="text-2xl  md:text-5xl font-bold text-center mb-4 md:mb-6 mt-8">
-          Our Departments
+          Chapters and Affinity group
         </h2>
+        {/* <h3 className="text-sm md:text-base font-bold text-center mb-4 md:mb-6 mt-8">
+          Chapters and affinity groups are the key segments of IEEE architecture          that provides customized opportunities to students
+        // </h3> */}
         <Department />
       </div>
       <section className="">
@@ -41,7 +44,7 @@ export default function Home() {
         <BentoGridDemo />
       </div>
       <Faq />
-      <CTA />
+      {/* <CTA /> */}
     </>
   );
 }

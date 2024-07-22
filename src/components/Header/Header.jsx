@@ -17,7 +17,7 @@ function Header() {
                         className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                         href="#"
                         >
-                        About
+                        Home
                         </a>
                     </li>
 
@@ -26,7 +26,7 @@ function Header() {
                         className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                         href="#"
                         >
-                        Careers
+                        Event
                         </a>
                     </li>
 
@@ -35,7 +35,7 @@ function Header() {
                         className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                         href="#"
                         >
-                        History
+                        About Us
                         </a>
                     </li>
 
@@ -44,31 +44,15 @@ function Header() {
                         className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                         href="#"
                         >
-                        Services
+                        Chapter
                         </a>
                     </li>
 
-                    <li>
-                        <a
-                        className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                        href="#"
-                        >
-                        Projects
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                        className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                        href="#"
-                        >
-                        Blog
-                        </a>
-                    </li>
+                  
                     </ul>
                 </nav>
 
-                <div className="flex items-center gap-4">
+                {/* <div className="flex items-center gap-4">
                     <div className="sm:flex sm:gap-4">
                     <a
                         className="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 dark:hover:bg-teal-500"
@@ -100,7 +84,7 @@ function Header() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                     </button>
-                </div>
+                </div> */}
                 </div>
             </div>
         </header>

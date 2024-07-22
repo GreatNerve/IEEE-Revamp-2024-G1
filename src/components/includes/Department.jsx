@@ -1,19 +1,14 @@
-import { cn } from "@/utils/cn";
-import React from "react";
-import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
   IconClipboardCopy,
   IconFileBroken,
-  IconSignature,
-  IconTableColumn,
+  IconSignature
 } from "@tabler/icons-react";
+import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
+import { Suspense } from "react";
 
 export function Department() {
   return (
-    <BentoGrid className="">
+    <BentoGrid className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-4">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -31,21 +26,35 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
+    title: "Computer Society Chapter",
+    description: "The IEEE Computer Society Chapter is a subgroup of IEEE dedicated to advancing computing technology and fostering knowledge exchange among professionals and students in the field.",
+    header: <Suspense fallback={<Skeleton />} >
+      <img className="w-full h-full object-center rounded-xl" src="/images/department/cs.png" alt="Computer Society Chapter" />
+    </Suspense>,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+    title: "Robotics and Automation Chapter",
+    description: "The Robotics and Automation Chapter of IEEE focuses on advancing research, development, and application of robotics and automation technologies.",
+    header: <Suspense fallback={<Skeleton />} >
+      <img className="w-full h-full object-center rounded-xl" src="/images/department/RAS.svg" alt="Robotics and Automation Chapter" />
+    </Suspense>,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
+    title: "Circuits and Systems Chapter",
+    description: "The Circuits and Systems Chapter of IEEE specializes in advancing the theory, design, and implementation of circuits and systems for various applications in electronics and technology.",
+    header: <Suspense fallback={<Skeleton />} >
+    <img className="w-full h-full object-center rounded-xl" src="/images/department/CAS.png" alt="Robotics and Automation Chapter" />
+  </Suspense>,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
+  {
+    title: "WIE Affinity Group",
+    description : "The Women in Engineering Affinity Group of IEEE promotes gender diversity and supports professional development for women in engineering and technology fields.",
+    header: <Suspense fallback={<Skeleton />} >
+      <img className="w-full h-full object-center rounded-xl" src="/images/department/WIE.svg" alt="WIE Affinity Group" />
+    </Suspense>,
+    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+  }
 ];
